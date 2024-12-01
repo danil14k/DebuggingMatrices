@@ -27,7 +27,7 @@ public class MatricesDebugging {
         // Error en el bucle de transposición: usamos mal los índices
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                transposedMatrix[i][j] = matrix[j][i]; // Error: El índice i y j están invertidos
+                transposedMatrix[j][i] = matrix[i][j]; // Error: El índice i y j están invertidos
             }
         }
 
