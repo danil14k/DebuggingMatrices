@@ -51,8 +51,8 @@ public class MatricesDebugging {
         try {
             int sum = 0;
             // Intento de sumar los elementos de la matriz de forma incorrecta
-            for (int i = 0; i <= matrix.length; i++) {  // Error: índice fuera de límites
-                for (int j = 0; j <= matrix[i].length; j++) {  // Error: índice fuera de límites
+            for (int i = 0; i < matrix.length; i++) {  // Error: índice fuera de límites
+                for (int j = 0; j < matrix[i].length; j++) {  // Error: índice fuera de límites
                     sum += matrix[i][j];
                 }
             }
